@@ -1,50 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eyu Gen</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/jpg" href="yugin.jpg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" href="yugin.jpg">
+  
+  <title>Eyu Gen</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <section class="container1">
-            <div class="imageSection">
-                <img src="logo.svg" alt="" class="logo">
-            </div>
-            <div class="uploadSection">
-                <div class="docSection">
-                    <img src="icon-document.svg" alt="" class="document">
-                </div>
-                <div class="fileSection">
-                    <img src="icon-folder.svg" alt="" class="file">
-                </div>
-                <div class="uploadSection">
-                    <img src="icon-upload.svg" alt="" class="upload">
-                </div>
-            </div>
+  <main class="container">
+      <section class="card">
+          <img class="card__image" src="logo.svg" alt="">
+          <div class="card__actions">
+            <a href="#" class="card__link">
+              <img src="icon-document.svg" alt="">
+            </a>
+            <a href="#" class="card__link">
+              <img src="icon-folder.svg" alt="">
+            </a>
+            <a href="#" class="card__link">
+              <img src="icon-upload.svg" alt="">
+            </a>
+          </div>
         </section>
-        <section class="container2">
-            <p class="para">
-                You've used <span class="size">815 GB</span>of your storage
-            </p>
-            <div class="totalSize">
-                <div class="occupiedSize">
-                    <div class="circle"></div>
-                </div>
+        <section class="info">
+          <p class="info__text"> You've used <strong>815</strong> GB of your storage  </p>
+          <div class="progress">
+            <div class="progress__bar">
+              <div class="progress__circle"></div>
             </div>
-            <div class="storage">
-                <p class="minSize">0 GB</p>
-                <p class="maxSize">1000 GB</p>
-            </div>
+          </div>
+          <div class="numbers">
+            <span>0 GB</span>
+            <span> 1000 GB</span>
+          </div>
+          <div class="memory">
+            <span class="memory__number">185</span>
+            <span class="memory__text">GB LEFT</span>
+          </div>
         </section>
-        <section class="container3">
-            <div class="remainingSize">
-                <p class="number">185</p>
-                <p class="left">gb left</p>
-            </div>
-        </section>
-    </main>
+  </main>
 </body>
 </html>
